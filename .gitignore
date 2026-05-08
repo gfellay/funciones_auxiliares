@@ -1,0 +1,16 @@
+# Byte-compiled
+__pycache__/
+*.py[cod]
+
+# Virtual envs
+venv/
+.env/
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+func_auxiliares_obsoleta.py
