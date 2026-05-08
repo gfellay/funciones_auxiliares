@@ -49,27 +49,23 @@ funciones_auxiliares/
 **obtener_data()** — lectura rápida de la primera columna de un Excel <br>
 
 ## 🧪 Ejemplos de uso
-### Leer un directorio
 ```Python
 import funciones_auxiliares as fa
 
+# Leer un directorio
 df = fa.leer_directorio("C:/temp", recorrer_subcarpetas=True)
 print(df)
-```
-### Limpiar un DataFrame
-```Python
+
+# Limpiar un DataFrame
 df = fa.formatearDF(df)
-```
-### Convertir una columna a numérica
-```Python
+
+# Convertir una columna a numérica
 df["importe"] = fa.formatear_columna_numerica(df["importe"])
-```
-### Leer archivo generado por SAP LISTA (ALV)
-```Python
+
+# Leer archivo generado por SAP LISTA (ALV)
 df = fa.leer_csv_sin_Pandas("export_sap.txt")
-```
-### Crear una serie de fechas
-```Python
+
+# Crear una serie de fechas
 serie = fa.crear_serie(date(2024,1,1), date(2024,1,10))
 ```
 
